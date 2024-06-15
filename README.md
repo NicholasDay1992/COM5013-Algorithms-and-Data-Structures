@@ -1,5 +1,5 @@
-# CO536-Algorithms-and-Data-Structures
-This is the repository for the module CO536 Algorithms and Data Structures in Python.
+# COM5013-Algorithms-and-Data-Structures
+This is the repository for the module COM5013 Algorithms and Data Structures in Python.
 
 We shall explore a number of data structures and measure how different algorithms perform.
 
