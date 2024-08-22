@@ -1,6 +1,6 @@
 from flask import Flask, render_template
-#from flask_test_app.data_processing import get_stack
-from flask_test_app.data_set import get_data
+#from data_processing import get_stack
+from data_set import get_data
 
 app = Flask(__name__)
 

@@ -11,7 +11,7 @@ def init_dataset():
 
 def get_data():
     l = init_dataset()
-    
+    c = l['text']
     #l = ["Nick Day", "John Smith", "Katriona Lukas", "Sam Wintersmith", st.get_sender()]
     #l = [0,1,2,3,4,5,6,7]
-    return l[0]
+    return c

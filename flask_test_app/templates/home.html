@@ -8,22 +8,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <a href = "/about">about</a>
+    <a href = "/queue">08 Queue</a>
     <h1>Simulation of a stack!</h1>
     <ul>
         {% for i in result %}
-            <li> {{ result[i] }} </li>
+            <li><p> {{ result[0] }} </p> </li>
         {% endfor %}
     </ul>
 
-    <!--
-    <h2>{{ result[0] }}</h2>  
-    <h2>{{ result[1] }}</h2>  
-    <h2>{{ result[2] }}</h2>  
-    <h2>{{ result[3] }}</h2>  
-    <h2>{{ result[4] }}</h2>  
--->
+    <table border = "3">
+        <tr><td>{{ result[0] }}</td> </tr>
+        <tr><td>{{ result[1] }}</td> </tr>
+        <tr><td>{{ result[2] }}</td> </tr>
+        <tr><td>{{ result[3] }}</td> </tr>
+        <tr><td>{{ result[4] }}</td> </tr>
+    </table>
 
-    <a href = "/about">about</a>
+    <h6>{{ result[0] }}</h6>  
+    <h6>{{ result[1] }}</h6>  
+    <h6>{{ result[2] }}</h6>  
+    <h6>{{ result[3] }}</h6>  
+    <h6>{{ result[4] }}</h6>  
+
+
 </body>
 </html>
