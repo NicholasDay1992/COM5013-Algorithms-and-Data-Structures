@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Simulation of a stack!</h1>
+    <ul>
+        {% for i in result %}
+            <li> {{ result[i] }} </li>
+        {% endfor %}
+    </ul>
+
+    <!--
+    <h2>{{ result[0] }}</h2>  
+    <h2>{{ result[1] }}</h2>  
+    <h2>{{ result[2] }}</h2>  
+    <h2>{{ result[3] }}</h2>  
+    <h2>{{ result[4] }}</h2>  
+-->
+
+    <a href = "/about">about</a>
+</body>
+</html>
