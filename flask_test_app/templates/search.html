@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href = "/">home</a>
+    <a href = "/queue">08 Queue</a>
+
+    <h1>Search</h1>
+    <p> This task utilises Linear Search and Binary Search to identify whether a value is present or not </p>
+    <p> Try building the auto complete functionality via an input box here! </p>
+    <input = "text"> 
+    <button type = "submit"> Search </button>
+    <h2> Linear Search </h2>
+    <table border = "3">
+        <tr>
+            <td>size</td> <td>{{ result[0] }}</td> 
+        </tr>
+        <tr>
+            <td>value sought</td> <td>{{ result[1] }}</td> 
+        </tr>
+        <tr>
+            <td>exists?</td> <td>{{ result[2] }}</td> 
+        </tr>
+        <tr>
+            <td>function calls</td> <td>{{ result[3] }}</td> 
+        </tr>
+        <tr><td>execution time</td> <td>{{ result[4] }}</td> 
+        </tr>
+    </table>
+
+</body>
+</html>
