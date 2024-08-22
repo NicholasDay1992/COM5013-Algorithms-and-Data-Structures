@@ -21,13 +21,13 @@ def init_data():
     print("Time taken to read", size, "elements =", float(execution_time), "seconds")
     print("Number of function calls:", call_count)
     
-    l = search_value()
+    l = linear_search()
     
     #l = [size, call_count, execution_time]
     return l
 
 
-def search_value():
+def linear_search():
     size = 100000
     call_count = 0 
     value_sought = random.randint(0,size)
@@ -55,3 +55,9 @@ def search_value():
     l = [size, value_sought, exists, call_count, execution_time]
     return l
 
+def binary_search():
+    size = 100000
+    call_count = 0 
+    value_sought = random.randint(0,size)
+    exists = False
+    return size

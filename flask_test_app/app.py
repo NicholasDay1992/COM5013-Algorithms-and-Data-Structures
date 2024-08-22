@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 #from data_processing import get_stack
 from data_set import get_data
-from search_data import init_data
+from search_data import linear_search, binary_search
 
 app = Flask(__name__)
 
@@ -18,8 +18,9 @@ def queue():
 
 @app.route('/search')
 def search():
-    return_dict = init_data()
-    return render_template('search.html', result=return_dict)
+    linear = linear_search()
+    binary = binary_search()
+    return render_template('search.html', linear=linear, binary=binary)
 
 if __name__ == '__main__':
     app.run(debug=True) 
