@@ -32,7 +32,27 @@
         {% endfor %}
     </ul>
 
-    <h2>Amazon List of tech products</h2>
+    <h1>Amazon data via SQL Lite DB</h1>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>No. of reviews</th>
+            <th>Link</th>
+        </tr>
+        {% for a in amazon_db %}
+        <tr>
+            <td>{{ a[0] }}</td>
+            <td>{{ a[1] }}</td>
+            <td>{{ a[2] }}</td>
+            <td>{{ a[3] }}</td>
+            <td>{{ a[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Amazon List of tech products via Pandas DF</h2>
 
     <ul>
         {% for a in amazon %}
