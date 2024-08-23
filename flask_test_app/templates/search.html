@@ -17,6 +17,30 @@
     <p> Try building the auto complete functionality via an input box here! </p>
     <input = "text"> 
     <button type = "submit"> Search </button>
+
+    <h2> Dictionary Test </h2> 
+
+    <p><strong>Name:</strong> {{ user_dict.name }}</p>
+    <p><strong>Age:</strong> {{ user_dict.age }}</p>
+    <p><strong>Occupation:</strong> {{ user_dict.occupation }}</p>
+    <p><strong>Location:</strong> {{ user_dict.location }}</p>
+
+    <h2>Linear search of Amazon list</h2>
+    <ul>
+        {% for a in results_list %}
+            <li>{{ a }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Amazon List of tech products</h2>
+
+    <ul>
+        {% for a in amazon %}
+            <li>{{ a }}</li>
+        {% endfor %}
+    </ul>
+
+
     <h2> Linear Search </h2>
     <table border = "3">
         <tr>
