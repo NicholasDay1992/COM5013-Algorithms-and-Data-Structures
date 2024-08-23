@@ -25,9 +25,9 @@ def search():
 
 @app.route('/sort')
 def sort():
-    bubble = bubble_search()
+    bubble = bubble_sort()
     merge = conduct_merge_sort()
-    return render_template('search.html', bubble=bubble, merge=merge)
+    return render_template('sort.html', bubble=bubble, merge=merge)
 
 
 if __name__ == '__main__':
