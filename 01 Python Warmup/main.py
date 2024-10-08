@@ -1,4 +1,4 @@
-from Student import Student 
+from student import Student 
 
 def main():
     nick = Student("Nick")
