@@ -12,7 +12,8 @@ We shall explore a number of data structures and measure how different algorithm
 * 🎥 [04 Linked Lists](https://youtu.be/w0oxcxj770o) 📝 [04 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/04%20Nodes%20and%20Linked%20Lists/04%20Python%20Linked%20Lists.ipynb)
 * 🎥 [05 Asymptotic Complexity](https://youtu.be/rtUw8I6_Nvc) 📝 [05 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/05%20Big%20O%20Notation/05%20Asymptotic%20Notation.ipynb) 
 * 🎥 [06 Search and Sorting Algorithms](https://youtu.be/EDlga-vpp4I) 📝 [06 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/06%20Sort%20and%20Search/06%20Search%20and%20Sort%20Algorithms.ipynb)
-
+* 🎥 [07 Stacks and Queues]() 📝 [07 Notebook - Slides & Exercises]() 
+* 🎥 [08 Heaps]() 📝 [08 Notebook - Slides & Exercises]()
 
 
 Check out the [wiki for more info on the module](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/wiki/Home/)
