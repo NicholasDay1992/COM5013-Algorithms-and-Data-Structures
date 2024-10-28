@@ -1,0 +1,293 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular;\f1\fnil\fcharset0 .SFNS-Bold;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 Teaching a lecture on heaps requires a structured approach that covers both theoretical concepts and practical applications. Here\'92s a suggested outline for a 1-hour lecture on heaps, suitable for students who are familiar with basic data structures (like arrays and trees) but may not yet know how heaps work.\
+\
+
+\f1\b\fs30 Lecture Title: Heaps: Theory, Implementation, and Applications
+\f0\b0\fs28 \
+\
+
+\f1\b\fs30 I. Introduction to Heaps (10 minutes)
+\f0\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f1\b What is a Heap?
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Define a heap as a specialized binary tree with specific ordering properties.\
+	\'95	Emphasize the two primary types of heaps: 
+\f1\b Min-Heap
+\f0\b0  and 
+\f1\b Max-Heap
+\f0\b0 .\
+\pard\tqr\tx900\tx1060\li1060\fi-1060\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f1\b Min-Heap
+\f0\b0 : The root (or each parent node) is the smallest element.\
+	\'95	
+\f1\b Max-Heap
+\f0\b0 : The root (or each parent node) is the largest element.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f1\b Heap Properties
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Explain that heaps are 
+\f1\b complete binary trees
+\f0\b0  (i.e., all levels are fully filled except possibly the last, which is filled from left to right).\
+	\'95	Describe the 
+\f1\b ordering property
+\f0\b0  for both min-heaps and max-heaps, emphasizing that the order only applies between parents and direct children (not across all nodes).\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	3.	
+\f1\b Real-World Applications of Heaps
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Priority queues (task scheduling, Dijkstra\'92s algorithm).\
+	\'95	Heap Sort (efficient sorting algorithm).\
+	\'95	Applications in resource management, such as memory management in operating systems.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 II. Representing Heaps in Arrays (10 minutes)
+\f0\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f1\b Why Arrays?
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Explain that heaps can be stored efficiently in arrays due to their complete tree structure.\
+	\'95	Introduce the formula to navigate between parent and child nodes:\
+\pard\tqr\tx900\tx1060\li1060\fi-1060\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f1\b Parent
+\f0\b0  of node at index 
+\f3 i
+\f0 : 
+\f3 floor((i - 1) / 2)
+\f0 \
+	\'95	
+\f1\b Left child
+\f0\b0  of node at index 
+\f3 i
+\f0 : 
+\f3 2 * i + 1
+\f0 \
+	\'95	
+\f1\b Right child
+\f0\b0  of node at index 
+\f3 i
+\f0 : 
+\f3 2 * i + 2
+\f0 \
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f1\b Example of Array Representation
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Walk through a quick example showing how a min-heap can be represented in an array.\
+	\'95	Show the array index mapping and emphasize that this arrangement helps save memory and simplifies traversal.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 III. Heap Operations (20 minutes)
+\f0\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f1\b Insert Operation
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Describe the process of inserting an element at the end of the heap (last index in the array).\
+	\'95	Introduce 
+\f1\b heapify-up
+\f0\b0  (also called \'93bubble-up\'94 or \'93sift-up\'94) to restore the heap property.\
+	\'95	Walk through a step-by-step example with a min-heap.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f1\b Delete-Min / Delete-Max Operation
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Explain removing the root element (the minimum in a min-heap or maximum in a max-heap).\
+	\'95	Detail how the last element is swapped with the root, removed, and then the 
+\f1\b heapify-down
+\f0\b0  (or \'93sift-down\'94) process restores the heap property.\
+	\'95	Provide a step-by-step example with a min-heap to illustrate the process.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	3.	
+\f1\b Peek Operation
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Quick explanation of why accessing the minimum or maximum element (the root) in a heap is 
+\f3 O(1)
+\f0  and doesn\'92t require modifications to the heap.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	4.	
+\f1\b Time Complexity Analysis
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Summarize the time complexity of each operation:\
+\pard\tqr\tx900\tx1060\li1060\fi-1060\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f1\b Insert
+\f0\b0 : 
+\f3 O(log n)
+\f0  (due to heapify-up)\
+	\'95	
+\f1\b Delete-Min/Delete-Max
+\f0\b0 : 
+\f3 O(log n)
+\f0  (due to heapify-down)\
+	\'95	
+\f1\b Peek
+\f0\b0 : 
+\f3 O(1)
+\f0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 IV. Implementing Heaps with Python\'92s heapq Module (10 minutes)
+\f0\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f1\b Using 
+\f3\b0 heapq
+\f1\b  for Min-Heap Implementation
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Introduce the 
+\f3 heapq
+\f0  module as Python\'92s built-in library for heaps.\
+	\'95	Explain how 
+\f3 heapq
+\f0  provides a min-heap by default and walk through basic operations:\
+\pard\tqr\tx900\tx1060\li1060\fi-1060\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f3 heapq.heappush(heap, item)
+\f0 \
+	\'95	
+\f3 heapq.heappop(heap)
+\f0 \
+	\'95	
+\f3 heapq.heapify(list)
+\f0 \
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f1\b Implementing a Max-Heap with 
+\f3\b0 heapq
+\f0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Show how to create a max-heap by storing elements as negative values.\
+	\'95	Quick example demonstrating how to insert, remove, and maintain a max-heap using 
+\f3 heapq
+\f0 .\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	3.	
+\f1\b Code Examples
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Provide small code snippets for each operation to demonstrate the usage of 
+\f3 heapq
+\f0  in Python.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 V. Applications of Heaps (5 minutes)
+\f0\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f1\b Priority Queue
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Briefly explain that a priority queue is an abstract data type where elements are accessed based on priority rather than insertion order.\
+	\'95	Illustrate how heaps are commonly used to implement efficient priority queues.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f1\b Heap Sort Algorithm
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Describe the heap sort algorithm:\
+\pard\tqr\tx900\tx1060\li1060\fi-1060\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Build a max-heap (or min-heap for descending order).\
+	\'95	Repeatedly remove the root (largest element in max-heap) and move it to the end of the array.\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Highlight that heap sort has an 
+\f3 O(n log n)
+\f0  time complexity and is an in-place sorting algorithm.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	3.	
+\f1\b Graph Algorithms (Dijkstra\'92s Algorithm)
+\f0\b0 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Brief overview of how heaps (priority queues) are used to optimize shortest-path algorithms like Dijkstra\'92s, where the next node with the smallest tentative distance is selected at each step.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 VI. Practice Problems and Q&A (5 minutes)
+\f0\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f1\b Suggested Exercises
+\f0\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Implement a min-heap and max-heap from scratch.\
+	\'95	Convert an array into a min-heap using 
+\f3 heapq
+\f0 .\
+	\'95	Use a min-heap to find the 
+\f3 k
+\f0  smallest elements in a list.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f1\b Questions and Clarification
+\f0\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Open the floor for questions to clarify concepts or operations discussed.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 VII. Wrap-Up and Key Takeaways
+\f0\b0\fs28 \
+\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f1\b Recap
+\f0\b0 : Emphasize the key points:\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The structure and properties of heaps.\
+	\'95	Basic heap operations (insert, delete, peek).\
+	\'95	Applications in priority queues, heap sort, and Dijkstra\'92s algorithm.\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f1\b Encourage Practice
+\f0\b0 : Mention the importance of practicing heap problems to understand how heaps optimize various algorithms.\
+\
+This structure covers the essential concepts, hands-on code demonstrations, and real-world applications, helping students build a solid understanding of heaps.}
