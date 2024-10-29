@@ -13,7 +13,7 @@ We shall explore a number of data structures and measure how different algorithm
 * 🎥 [05 Asymptotic Complexity](https://youtu.be/rtUw8I6_Nvc) 📝 [05 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/05%20Big%20O%20Notation/05%20Asymptotic%20Notation.ipynb) 
 * 🎥 [06 Search and Sorting Algorithms](https://youtu.be/EDlga-vpp4I) 📝 [06 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/06%20Sort%20and%20Search/06%20Search%20and%20Sort%20Algorithms.ipynb)
 * 🎥 [07 Stacks & Queues](https://youtu.be/XjsJQgED23w) 📝 [07 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/07%20Stacks%20and%20Queues/07%20Stacks%20and%20Queues.ipynb)
-* 🎥 [08 Heaps]() 📝 [08 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/08%20Heaps/08%20Heaps.ipynb)
+* 🎥 [08 Heaps](https://youtu.be/ACNCyCbc3dc) 📝 [08 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/08%20Heaps/08%20Heaps.ipynb)
 
 Check out the [wiki for more info on the module](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/wiki/Home/)
 
