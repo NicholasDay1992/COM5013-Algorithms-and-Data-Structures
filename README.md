@@ -16,6 +16,8 @@ We shall explore a number of data structures and measure how different algorithm
 * 🎥 [08 Heaps](https://youtu.be/ACNCyCbc3dc) 📝 [08 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/08%20Heaps/08%20Heaps.ipynb)
 * 🎥 [09 Hashing I - Chaining and Addressing](https://youtu.be/biqWDKFONlY?si=EtGMLuLtYFzZDq5Z)  📝 [09 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/09%20Hashing%20and%20Collisions/09%20Hashing%20and%20Collisions.ipynb)
 * 🎥 [10 Hashing II - Cryptography](https://youtu.be/foYsAZMCsQo) 📝 [10 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/10%20Cryptographic%20Hashing/10%20Cryptographic%20Hashing.ipynb)
+* 🎥 [11 Trees](https://youtu.be/Lvm1WAh5rJM)  📝 [11 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/11%20Trees%20and%20BSTs/11%20Trees.ipynb)
+* 🎥 [12 BFS & DFS](https://youtu.be/KbDNxRljbCY)  📝 [12 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/12%20Tree%20DFS%20and%20BFS/12%20DFS_BFS.ipynb) 
 
 Check out the [wiki for more info on the module](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/wiki/Home/)
 
