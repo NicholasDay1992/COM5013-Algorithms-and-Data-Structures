@@ -2,7 +2,7 @@
 This is the repository for the module COM5013 Algorithms and Data Structures in Python.
 
 We shall explore a number of data structures and measure how different algorithms perform.
-
+ 
 ## COM5013 Curriculum 
 * 🎥 [00 Welcome to COM5013](https://youtu.be/g0u1S87g4_w).  
 * 🎥 [01 Python Warmup I - OOP](https://youtu.be/Kl7fp7k4jPE?si=twyQjh9m-sXXNRuG). 📝 [01 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/01%20Python%20Warmup/01%20Python%20Basics%20to%20OOP.ipynb)   
