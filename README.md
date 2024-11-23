@@ -16,10 +16,10 @@ We shall explore a number of data structures and measure how different algorithm
 * 🎥 [08 Heaps](https://youtu.be/ACNCyCbc3dc) 📝 [08 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/08%20Heaps/08%20Heaps.ipynb)
 * 🎥 [09 Hashing I - Chaining and Addressing](https://youtu.be/biqWDKFONlY?si=EtGMLuLtYFzZDq5Z)  📝 [09 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/09%20Hashing%20and%20Collisions/09%20Hashing%20and%20Collisions.ipynb)
 * 🎥 [10 Hashing II - Cryptography](https://youtu.be/foYsAZMCsQo) 📝 [10 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/10%20Cryptographic%20Hashing/10%20Cryptographic%20Hashing.ipynb)
-* 🎥 [11 Trees](https://www.youtube.com/watch?v=GuZ3DWEmefM)  📝 [11 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/11%20Trees%20and%20BSTs/11%20Trees.ipynb)
-* 🎥 [12 BFS & DFS](https://youtu.be/1CDQwNkzY_8)  📝 [12 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/12%20Tree%20DFS%20and%20BFS/12%20DFS_BFS.ipynb)
-* 🎥 [13 Graphs I](https://youtu.be/ZLGuOnAgvJw?si=G_cBnPGyZ9aytAjC) 📝 [13 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/13%20Graph%20Theory/13%20Graphs.ipynb) 
-* 🎥 [14 Graphs II - Dijkstra and A*](https://youtu.be/lkkvVBw2agc) 📝 [14 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/14%20Graph%20Path%20Finding/14%20Path%20Finding.ipynb)   
+* 🎥 [11 Trees I - Non-Binary and BSTs](https://www.youtube.com/watch?v=GuZ3DWEmefM)  📝 [11 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/11%20Trees%20and%20BSTs/11%20Trees.ipynb)
+* 🎥 [12 Trees II - BFS & DFS](https://youtu.be/1CDQwNkzY_8)  📝 [12 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/12%20Tree%20DFS%20and%20BFS/12%20DFS_BFS.ipynb) 
+* 🎥 [13 Graphs I - Theory, MSTs, Top Sort](https://youtu.be/ZLGuOnAgvJw?si=G_cBnPGyZ9aytAjC) 📝 [13 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/13%20Graph%20Theory/13%20Graphs.ipynb) 
+* 🎥 [14 Graphs II - Dijkstra and A*](https://youtu.be/lkkvVBw2agc) 📝 [14 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/14%20Graph%20Path%20Finding/14%20Path%20Finding.ipynb)    
 
 Check out the [wiki for more info on the module](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/wiki/Home/)
 
