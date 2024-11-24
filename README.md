@@ -21,7 +21,7 @@ We shall explore a number of data structures and measure how different algorithm
 * 🎥 [13 Graphs I - Theory, MSTs, Top Sort](https://youtu.be/ZLGuOnAgvJw?si=G_cBnPGyZ9aytAjC) 📝 [13 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/13%20Graph%20Theory/13%20Graphs.ipynb) 
 * 🎥 [14 Graphs II - Dijkstra and A*](https://youtu.be/lkkvVBw2agc) 📝 [14 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/14%20Graph%20Path%20Finding/14%20Path%20Finding.ipynb)
 * 🎥 [15 Dynamic Programming I - Bottom-Up vs Top-Down]() 📝 [15 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/15%20Dynamic%20Programming%20I/15%20Dynamic%20Programming%20I.ipynb)
-* 🎥 [16 Dynamic Programming II]() 📝 [16 Notebook - Slides & Exercises]()   
+* 🎥 [16 Dynamic Programming II]() 📝 [16 Notebook - Slides & Exercises](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/blob/main/16%20Dynamic%20Programming%20II/16%20Dynamic%20Programming%20II.ipynb)   
 
 Check out the [wiki for more info on the module](https://github.com/NicholasDay1992/COM5013-Algorithms-and-Data-Structures/wiki/Home/)
 
